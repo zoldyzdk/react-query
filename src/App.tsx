@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import PagesQuery from "./PagesQuery";
 
 function App() {
 const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ const [page, setPage] = useState(1);
   }
 
   const Cards = () => {
+
     return (
       <ol>
         {
@@ -46,8 +48,6 @@ const Pages = () => {
   );
 };
 
-
-
   return (
     <div className="App">
       <div>
@@ -59,10 +59,11 @@ const Pages = () => {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Pages />
-      <button onClick={onClick}>GET!</button>
-      <button onClick={() => setIsActive(false)}>Erase GET</button>
-      <Cards />
+      {/*<Pages />*/}
+      {/*<button onClick={onClick}>GET!</button>*/}
+      {/*<button onClick={() => setIsActive(false)}>Erase GET</button>*/}
+      {/*<Cards />*/}
+      <PagesQuery />
     </div>
   )
 }
